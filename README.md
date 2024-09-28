@@ -1,4 +1,3 @@
-# CIS-641-HW2-OOTLA
 # Venu Ootla
 
 ## My Interests
