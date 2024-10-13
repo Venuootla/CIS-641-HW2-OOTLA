@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f4f8; /* Light grey background */
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh; /* Minimum height of the viewport */
+        }
+        .container {
+            background-color: #b39ddb; /* Light purple background */
+            border-radius: 10px;
+            padding: 30px;
+            text-align: center;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            max-width: 600px;
+            transition: transform 0.2s; /* Animation on hover */
+        }
+        .container:hover {
+            transform: scale(1.02); /* Slightly scale on hover */
+        }
+        h1 {
+            color: #ffffff; /* White color for headings */
+        }
+        h2 {
+            color: #ffffff; /* White color for subheadings */
+        }
+        p {
+            color: #fefefe; /* Very light color for paragraph text */
+            line-height: 1.5; /* Better readability */
+        }
+        .section-box {
+            background-color: #d1c4e9; /* Light purple box for sections */
+            border-radius: 5px;
+            padding: 15px;
+            margin: 15px 0;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        footer {
+            margin-top: 20px;
+            font-size: 0.9em;
+            color: #eeeeee; /* Light grey footer text */
+        }
+        a {
+            color: #ffd54f; /* Gold color for links */
+            text-decoration: none; /* Remove underline */
+        }
+        a:hover {
+            text-decoration: underline; /* Underline on hover */
+        }
+        img {
+            border-radius: 50%; /* Make the image circular */
+            width: 150px; /* Set width for the image */
+            height: 150px; /* Set height for the image */
+            margin: 20px 0; /* Add margin above and below the image */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Hello, I'm Venu Ootla</h1>
+        <img src="/Users/venuootla/Downloads/IMG_1858.jpg" alt="Venu Ootla"> <!-- Add your photo here -->
+        <div class="section-box">
+            <h2>About</h2>
+            <p>Results-driven Salesforce Developer with over 6 years of experience in Salesforce CRM, Apex, and Lightning Web Components (LWC). 
+               Expertise in Sales Cloud, Service Cloud, and Experience Cloud, with a strong track record in designing and implementing scalable, user-centric applications. 
+               Proven ability to optimize business processes and deliver solutions that exceed expectations.
+            </p>
+        </div>
+        <div class="section-box">
+            <h2>Interests</h2>
+            <p>I love cooking, watching Netflix series, and dancing in the rain.
+               My technical interests include Cloud Computing and Salesforce Platform Innovations.
+            </p>
+        </div>
+        <div class="section-box">
+            <h2>Technical Background</h2>
+            <p>Languages: Python, JavaScript, HTML, CSS<br>
+               Salesforce Development: Apex, Lightning Web Components (LWC), Visualforce, Salesforce Security Controls.
+            </p>
+        </div>
+        <div class="section-box">
+            <h2>My Team Website</h2>
+        </div>
+        <div class="section-box">
+            <h2>Project Overview</h2>
+            <p>HomeGoods Inventory Management is an online application that helps store managers manage their inventories more efficiently. 
+               It includes secure user authentication, which allows only authorized managers to log in and create accounts.
+            </p>
+            <p>The application divides products into categories such as furniture, electronics, appliances, and home decor. 
+               Each category provides a thorough view of individual items, allowing managers to simply add, remove, or change inventory details such as item descriptions, prices, and photos.
+            </p>
+            <p>We're thinking of using Firebase or MongoDB on the backend to enable smooth data processing and real-time updates. 
+               The frontend will be built using ReactJS to ensure a responsive and user-friendly interface. 
+               Overall, this initiative seeks to improve inventory control and operational efficiency for shop managers.
+            </p>
+        </div>
+        <footer>
+            <p>Thank you for visiting my portfolio!</p>
+        </footer>
+    </div>
+</body>
+</html>
