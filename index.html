@@ -7,7 +7,7 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #f0f4f8; /* Light grey background */
+            background-color: #121212; /* Dark background */
             margin: 0;
             padding: 0;
             display: flex;
@@ -16,51 +16,49 @@
             min-height: 100vh; /* Minimum height of the viewport */
         }
         .container {
-            background-color: #b39ddb; /* Light purple background */
+            background-color: #1e1e1e; /* Dark grey for the container */
             border-radius: 10px;
             padding: 30px;
             text-align: center;
-            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
             max-width: 600px;
-            transition: transform 0.2s; /* Animation on hover */
+            transition: transform 0.2s ease-in-out;
         }
         .container:hover {
             transform: scale(1.02); /* Slightly scale on hover */
         }
-        h1 {
-            color: #ffffff; /* White color for headings */
-        }
-        h2 {
-            color: #ffffff; /* White color for subheadings */
+        h1, h2 {
+            color: #ffffff; /* White for headings */
         }
         p {
-            color: #fefefe; /* Very light color for paragraph text */
-            line-height: 1.5; /* Better readability */
+            color: #d3d3d3; /* Light grey for paragraph text */
+            line-height: 1.6;
         }
         .section-box {
-            background-color: #d1c4e9; /* Light purple box for sections */
-            border-radius: 5px;
-            padding: 15px;
-            margin: 15px 0;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            background-color: #2c2c2c; /* Darker grey for section boxes */
+            border-radius: 10px;
+            padding: 20px;
+            margin: 20px 0;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
         }
         footer {
             margin-top: 20px;
             font-size: 0.9em;
-            color: #eeeeee; /* Light grey footer text */
+            color: #b0bec5; /* Muted grey for footer text */
         }
         a {
-            color: #ffd54f; /* Gold color for links */
+            color: #64ffda; /* Neon green for links */
             text-decoration: none; /* Remove underline */
         }
         a:hover {
-            text-decoration: underline; /* Underline on hover */
+            text-decoration: underline; /* Underline links on hover */
         }
         img {
-            border-radius: 50%; /* Make the image circular */
-            width: 150px; /* Set width for the image */
-            height: 150px; /* Set height for the image */
-            margin: 20px 0; /* Add margin above and below the image */
+            border-radius: 50%; /* Circular image */
+            width: 150px;
+            height: 150px;
+            margin: 20px 0;
+            border: 2px solid #64ffda; /* Neon green border around the image */
         }
     </style>
 </head>
@@ -91,7 +89,7 @@
         </div>
         <div class="section-box">
             <h2>Project Overview</h2>
-            <p>HomeGoods Inventory Management is an online application that helps store managers manage their inventories more efficiently. 
+            <p>HomeGoods Inventory Management is an Web application that helps store managers manage their inventories more efficiently. 
                It includes secure user authentication, which allows only authorized managers to log in and create accounts.
             </p>
             <p>The application divides products into categories such as furniture, electronics, appliances, and home decor. 
@@ -99,7 +97,7 @@
             </p>
             <p>We're thinking of using Firebase or MongoDB on the backend to enable smooth data processing and real-time updates. 
                The frontend will be built using ReactJS to ensure a responsive and user-friendly interface. 
-               Overall, this initiative seeks to improve inventory control and operational efficiency for shop managers.
+               Overall, this initiative seeks to improve inventory control and operational efficiency for store managers.
             </p>
         </div>
         <footer>
