@@ -7,168 +7,181 @@
     <title>Venukeswari Ootla Portfolio</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
+            font-family: 'Arial', sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
+            background-color: #f0f2f5; /* Light background for the whole page */
         }
-        header {
-            background: #333;
+
+        /* Layout */
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .sidebar {
+            flex: 1;
+            max-width: 300px;
+            background-color: #007BFF; /* Blue background for sidebar */
+            color: white;
+            padding: 20px;
+            min-height: 100vh;
+            box-sizing: border-box;
+        }
+
+        .sidebar h1 {
             color: #fff;
-            padding: 20px 0;
-            text-align: center;
+            font-size: 24px;
+            margin-bottom: 10px;
         }
-        nav {
-            text-align: center;
-            margin: 20px 0;
+
+        .sidebar p {
+            font-size: 16px;
+            margin: 5px 0;
+            line-height: 1.5;
         }
-        nav a {
-            margin: 0 15px;
+
+        .sidebar a {
+            color: #FFD700; /* Gold color for links */
             text-decoration: none;
-            color: #333;
-            font-weight: bold;
         }
-        nav a:hover {
+
+        .content {
+            flex: 3;
+            padding: 20px;
+            background-color: #EAE1F5; /* Light purple for content area */
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            margin-left: 20px;
+        }
+
+        .content h2 {
+            border-bottom: 2px solid #6F2C91; /* Purple for headings */
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+            color: #6F2C91; /* Darker purple for headings */
+        }
+
+        .content p, .content ul {
+            line-height: 1.6;
+            margin-bottom: 20px;
             color: #555;
         }
-        section {
-            max-width: 800px;
-            margin: auto;
-            padding: 20px;
-            background: #fff;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+        .content ul li {
+            margin-bottom: 10px;
         }
-        h1, h2 {
-            text-align: center;
-        }
-        ul {
-            list-style-type: none;
-            padding: 0;
-        }
-        ul li {
-            background: #f4f4f4;
-            margin: 10px 0;
-            padding: 10px;
-            border-left: 5px solid #333;
-        }
+
         footer {
             text-align: center;
-            padding: 10px;
-            background: #333;
-            color: #fff;
-            margin-top: 20px;
+            padding: 20px;
+            background-color: #007BFF; /* Blue footer */
+            color: white;
+            margin-top: 30px;
         }
-        .button {
+
+        /* Buttons */
+        a.button {
             display: inline-block;
             padding: 10px 20px;
             margin: 10px 0;
-            background-color: #333;
+            background-color: #6F2C91; /* Purple button background */
             color: white;
             text-align: center;
             border-radius: 5px;
             text-decoration: none;
         }
-        .button:hover {
-            background-color: #555;
+
+        a.button:hover {
+            background-color: #5A227A; /* Darker purple on hover */
+        }
+
+        /* Mobile Responsive */
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+            }
+
+            .sidebar {
+                max-width: 100%;
+                margin-bottom: 20px;
+            }
+
+            .content {
+                margin-left: 0;
+            }
         }
     </style>
 </head>
 <body>
 
-<header>
-    <h1>Venukeswari Ootla</h1>
-    <p>Salesforce Developer | Cloud Computing Enthusiast</p>
-</header>
+<div class="container">
+    <div class="sidebar">
+        <h1>Venukeswari Ootla</h1>
+        <p>Salesforce Developer | Cloud Computing Enthusiast</p>
+        <p>Email: <a href="mailto:ootlav@mail.gvsu.edu">ootlav@mail.gvsu.edu</a></p>
+        <p>Phone: +1 (616) 329-3925</p>
+        <p>LinkedIn: <a href="https://linkedin.com/in/venu-ootla-bb9025110" target="_blank">linkedin.com/in/venu-ootla-bb9025110</a></p>
+    </div>
 
-<nav>
-    <a href="#about">About</a>
-    <a href="#skills">Skills</a>
-    <a href="#projects">Projects</a>
-    <a href="#team">My Team</a>
-    <a href="#experience">Experience</a>
-    <a href="#contact">Contact</a>
-</nav>
+    <div class="content">
+        <section id="about">
+            <h2>About Me</h2>
+            <p>I am a results-driven Salesforce Developer with over six years of experience specializing in Salesforce CRM, Apex, and Lightning Web Components (LWC). My expertise spans Sales Cloud, Service Cloud, and Experience Cloud. Currently pursuing a Master of Science in Applied Computer Science at Grand Valley State University, I aim to further develop my technical skills while continuing to deliver innovative software solutions.</p>
+            <p>I love cooking, watching Netflix series, and dancing in the rain. I'm also passionate about cloud computing and Salesforce platform innovations.</p>
+        </section>
 
-<section id="about">
-    <h2>About Me</h2>
-    <p>I am a results-driven Salesforce Developer with over six years of experience specializing in Salesforce CRM, Apex, and Lightning Web Components (LWC). My expertise spans Sales Cloud, Service Cloud, and Experience Cloud. Currently pursuing a Master of Science in Applied Computer Science at Grand Valley State University, I aim to further develop my technical skills while continuing to deliver innovative software solutions.</p>
-    <p>I love cooking, watching Netflix series, and dancing in the rain. I'm also passionate about cloud computing and Salesforce platform innovations.</p>
-</section>
+        <section id="skills">
+            <h2>Skills</h2>
+            <ul>
+                <li><strong>Languages:</strong> Python, JavaScript, HTML, CSS</li>
+                <li><strong>Salesforce Development:</strong> Apex, Lightning Web Components (LWC), Visualforce, Salesforce Security Controls</li>
+                <li><strong>Migration Tools:</strong> Change Set, Data Loader, Workbench</li>
+                <li><strong>Databases:</strong> PostgreSQL, MySQL, Neo4j, MongoDB, Redis Insight</li>
+                <li><strong>Version Control:</strong> Git, GitHub, GitLab</li>
+                <li><strong>Software:</strong> Microsoft 365 (Outlook, Excel, Word, PowerPoint), Salesforce CRM</li>
+            </ul>
+        </section>
 
-<section id="skills">
-    <h2>Skills</h2>
-    <ul>
-        <li><strong>Languages:</strong> Python, JavaScript, HTML, CSS</li>
-        <li><strong>Salesforce Development:</strong> Apex, Lightning Web Components (LWC), Visualforce, Salesforce Security Controls</li>
-        <li><strong>Migration Tools:</strong> Change Set, Data Loader, Workbench</li>
-        <li><strong>Databases:</strong> PostgreSQL, MySQL, Neo4j, MongoDB, Redis Insight</li>
-        <li><strong>Version Control:</strong> Git, GitHub, GitLab</li>
-        <li><strong>Software:</strong> Microsoft 365 (Outlook, Excel, Word, PowerPoint), Salesforce CRM</li>
-    </ul>
-</section>
-
-<section id="projects">
-    <h2>Projects</h2>
-    <ul>
-        <li>
+        <section id="projects">
+            <h2>Projects</h2>
             <h3>HomeGoods Inventory Management</h3>
             <p>Developed a comprehensive web application for store managers to manage their inventory more efficiently. The app includes features like secure user authentication, category-based product management, and real-time inventory updates using ReactJS and Firebase or MongoDB.</p>
-        </li>
-    </ul>
-</section>
+        </section>
 
-<section id="team">
-    <h2>My Team Website</h2>
-    <p>Team web page <a href="https://prashanthivelpula.github.io/GVSU-CIS641-InternationalTechies/" target="_blank">International Techies</a>.</p>
-</section>
+        <section id="team">
+            <h2>My Team Website</h2>
+            <p>Team web page <a href="https://prashanthivelpula.github.io/GVSU-CIS641-InternationalTechies/" target="_blank">International Techies</a>.</p>
+        </section>
 
-<section id="project-overview">
-    <h2>Project Overview</h2>
-    <p>HomeGoods Inventory Management is a web application that helps store managers manage their inventories more efficiently. 
-       It includes secure user authentication, which allows only authorized managers to log in and create accounts.
-    </p>
-    <p>The application divides products into categories such as furniture, electronics, appliances, and home decor. 
-       Each category provides a thorough view of individual items, allowing managers to simply add, remove, or change inventory details such as item descriptions, prices, and photos.
-    </p>
-    <p>We're thinking of using Firebase or MongoDB on the backend to enable smooth data processing and real-time updates. 
-       The frontend will be built using ReactJS to ensure a responsive and user-friendly interface. 
-       Overall, this initiative seeks to improve inventory control and operational efficiency for store managers.
-    </p>
-</section>
+        <section id="project-overview">
+            <h2>Project Overview</h2>
+            <p>HomeGoods Inventory Management is a web application that helps store managers manage their inventories more efficiently. It includes secure user authentication, which allows only authorized managers to log in and create accounts.</p>
+            <p>The application divides products into categories such as furniture, electronics, appliances, and home decor. Each category provides a thorough view of individual items, allowing managers to add, remove, or change inventory details such as item descriptions, prices, and photos.</p>
+            <p>We're thinking of using Firebase or MongoDB on the backend to enable smooth data processing and real-time updates. The frontend will be built using ReactJS to ensure a responsive and user-friendly interface.</p>
+        </section>
 
-<section id="experience">
-    <h2>Professional Experience</h2>
-    <ul>
-        <li>
-            <strong>Orientation Leader (Part-Time)</strong><br>
-            Grand Valley State University, Allendale, Michigan <br>
-            May 2024 - July 2024
-        </li>
-        <li>
-            <strong>IT Analyst</strong><br>
-            Tata Consultancy Services, Hyderabad, India <br>
-            March 2023 - August 2023
-        </li>
-        <li>
-            <strong>Associate Consultant</strong><br>
-            Capgemini Technologies, Hyderabad, India <br>
-            April 2022 - January 2023
-        </li>
-        <li>
-            <strong>Senior Associate</strong><br>
-            Wipro Ltd, Hyderabad, India <br>
-            June 2017 - February 2022
-        </li>
-    </ul>
-</section>
-
-<section id="contact">
-    <h2>Contact</h2>
-    <p>Email: <a href="mailto:ootlav@mail.gvsu.edu">ootlav@mail.gvsu.edu</a></p>
-    <p>Phone: +1 (616) 329-3925</p>
-    <p>LinkedIn: <a href="https://linkedin.com/in/venu-ootla-bb9025110" target="_blank">linkedin.com/in/venu-ootla-bb9025110</a></p>
-</section>
+        <section id="experience">
+            <h2>Professional Experience</h2>
+            <ul>
+                <li><strong>Orientation Leader (Part-Time)</strong> <br>
+                    Grand Valley State University, Allendale, Michigan <br> May 2024 - July 2024
+                </li>
+                <li><strong>IT Analyst</strong> <br>
+                    Tata Consultancy Services, Hyderabad, India <br> March 2023 - August 2023
+                </li>
+                <li><strong>Associate Consultant</strong> <br>
+                    Capgemini Technologies, Hyderabad, India <br> April 2022 - January 2023
+                </li>
+                <li><strong>Senior Associate</strong> <br>
+                    Wipro Ltd, Hyderabad, India <br> June 2017 - February 2022
+                </li>
+            </ul>
+        </section>
+    </div>
+</div>
 
 <footer>
     <p>Thank you for visiting my portfolio!</p>
