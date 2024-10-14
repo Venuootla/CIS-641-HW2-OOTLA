@@ -3,107 +3,177 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Venukeswari Ootla Portfolio</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #121212; /* Dark background */
+            line-height: 1.6;
             margin: 0;
             padding: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh; /* Minimum height of the viewport */
+            background-color: #f4f4f4;
         }
-        .container {
-            background-color: #1e1e1e; /* Dark grey for the container */
-            border-radius: 10px;
-            padding: 30px;
+        header {
+            background: #333;
+            color: #fff;
+            padding: 20px 0;
             text-align: center;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-            max-width: 600px;
-            transition: transform 0.2s ease-in-out;
         }
-        .container:hover {
-            transform: scale(1.02); /* Slightly scale on hover */
+        nav {
+            text-align: center;
+            margin: 20px 0;
+        }
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+        }
+        nav a:hover {
+            color: #555;
+        }
+        section {
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+            background: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
         h1, h2 {
-            color: #ffffff; /* White for headings */
+            text-align: center;
         }
-        p {
-            color: #d3d3d3; /* Light grey for paragraph text */
-            line-height: 1.6;
+        ul {
+            list-style-type: none;
+            padding: 0;
         }
-        .section-box {
-            background-color: #2c2c2c; /* Darker grey for section boxes */
-            border-radius: 10px;
-            padding: 20px;
-            margin: 20px 0;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        ul li {
+            background: #f4f4f4;
+            margin: 10px 0;
+            padding: 10px;
+            border-left: 5px solid #333;
         }
         footer {
+            text-align: center;
+            padding: 10px;
+            background: #333;
+            color: #fff;
             margin-top: 20px;
-            font-size: 0.9em;
-            color: #b0bec5; /* Muted grey for footer text */
         }
-        a {
-            color: #64ffda; /* Neon green for links */
-            text-decoration: none; /* Remove underline */
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            margin: 10px 0;
+            background-color: #333;
+            color: white;
+            text-align: center;
+            border-radius: 5px;
+            text-decoration: none;
         }
-        a:hover {
-            text-decoration: underline; /* Underline links on hover */
-        }
-        img {
-            border-radius: 50%; /* Circular image */
-            width: 150px;
-            height: 150px;
-            margin: 20px 0;
-            border: 2px solid #64ffda; /* Neon green border around the image */
+        .button:hover {
+            background-color: #555;
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <h1>Hello, I'm Venu Ootla</h1>
-        <div class="section-box">
-            <h2>About</h2>
-            <p>Results-driven Salesforce Developer with over 6 years of experience in Salesforce CRM, Apex, and Lightning Web Components (LWC). 
-               Expertise in Sales Cloud, Service Cloud, and Experience Cloud, with a strong track record in designing and implementing scalable, user-centric applications. 
-               Proven ability to optimize business processes and deliver solutions that exceed expectations.
-            </p>
-        </div>
-        <div class="section-box">
-            <h2>Interests</h2>
-            <p>I love cooking, watching Netflix series, and dancing in the rain.
-               My technical interests include Cloud Computing and Salesforce Platform Innovations.
-            </p>
-        </div>
-        <div class="section-box">
-            <h2>Technical Background</h2>
-            <p>Languages: Python, JavaScript, HTML, CSS<br>
-               Salesforce Development: Apex, Lightning Web Components (LWC), Visualforce, Salesforce Security Controls.
-            </p>
-        </div>
-        <div class="section-box">
-            <h2>My Team Website</h2>
-            <p>Team web page <a href="https://prashanthivelpula.github.io/GVSU-CIS641-InternationalTechies/" target="_blank">International Techies</a>.</p>
-        </div>
-        <div class="section-box">
-            <h2>Project Overview</h2>
-            <p>HomeGoods Inventory Management is an Web application that helps store managers manage their inventories more efficiently. 
-               It includes secure user authentication, which allows only authorized managers to log in and create accounts.
-            </p>
-            <p>The application divides products into categories such as furniture, electronics, appliances, and home decor. 
-               Each category provides a thorough view of individual items, allowing managers to simply add, remove, or change inventory details such as item descriptions, prices, and photos.
-            </p>
-            <p>We're thinking of using Firebase or MongoDB on the backend to enable smooth data processing and real-time updates. 
-               The frontend will be built using ReactJS to ensure a responsive and user-friendly interface. 
-               Overall, this initiative seeks to improve inventory control and operational efficiency for store managers.
-            </p>
-        </div>
-        <footer>
-            <p>Thank you for visiting my portfolio!</p>
-        </footer>
-    </div>
+
+<header>
+    <h1>Venukeswari Ootla</h1>
+    <p>Salesforce Developer | Cloud Computing Enthusiast</p>
+</header>
+
+<nav>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#team">My Team</a>
+    <a href="#experience">Experience</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<section id="about">
+    <h2>About Me</h2>
+    <p>I am a results-driven Salesforce Developer with over six years of experience specializing in Salesforce CRM, Apex, and Lightning Web Components (LWC). My expertise spans Sales Cloud, Service Cloud, and Experience Cloud. Currently pursuing a Master of Science in Applied Computer Science at Grand Valley State University, I aim to further develop my technical skills while continuing to deliver innovative software solutions.</p>
+    <p>I love cooking, watching Netflix series, and dancing in the rain. I'm also passionate about cloud computing and Salesforce platform innovations.</p>
+</section>
+
+<section id="skills">
+    <h2>Skills</h2>
+    <ul>
+        <li><strong>Languages:</strong> Python, JavaScript, HTML, CSS</li>
+        <li><strong>Salesforce Development:</strong> Apex, Lightning Web Components (LWC), Visualforce, Salesforce Security Controls</li>
+        <li><strong>Migration Tools:</strong> Change Set, Data Loader, Workbench</li>
+        <li><strong>Databases:</strong> PostgreSQL, MySQL, Neo4j, MongoDB, Redis Insight</li>
+        <li><strong>Version Control:</strong> Git, GitHub, GitLab</li>
+        <li><strong>Software:</strong> Microsoft 365 (Outlook, Excel, Word, PowerPoint), Salesforce CRM</li>
+    </ul>
+</section>
+
+<section id="projects">
+    <h2>Projects</h2>
+    <ul>
+        <li>
+            <h3>HomeGoods Inventory Management</h3>
+            <p>Developed a comprehensive web application for store managers to manage their inventory more efficiently. The app includes features like secure user authentication, category-based product management, and real-time inventory updates using ReactJS and Firebase or MongoDB.</p>
+        </li>
+    </ul>
+</section>
+
+<section id="team">
+    <h2>My Team Website</h2>
+    <p>Team web page <a href="https://prashanthivelpula.github.io/GVSU-CIS641-InternationalTechies/" target="_blank">International Techies</a>.</p>
+</section>
+
+<section id="project-overview">
+    <h2>Project Overview</h2>
+    <p>HomeGoods Inventory Management is a web application that helps store managers manage their inventories more efficiently. 
+       It includes secure user authentication, which allows only authorized managers to log in and create accounts.
+    </p>
+    <p>The application divides products into categories such as furniture, electronics, appliances, and home decor. 
+       Each category provides a thorough view of individual items, allowing managers to simply add, remove, or change inventory details such as item descriptions, prices, and photos.
+    </p>
+    <p>We're thinking of using Firebase or MongoDB on the backend to enable smooth data processing and real-time updates. 
+       The frontend will be built using ReactJS to ensure a responsive and user-friendly interface. 
+       Overall, this initiative seeks to improve inventory control and operational efficiency for store managers.
+    </p>
+</section>
+
+<section id="experience">
+    <h2>Professional Experience</h2>
+    <ul>
+        <li>
+            <strong>Orientation Leader (Part-Time)</strong><br>
+            Grand Valley State University, Allendale, Michigan <br>
+            May 2024 - July 2024
+        </li>
+        <li>
+            <strong>IT Analyst</strong><br>
+            Tata Consultancy Services, Hyderabad, India <br>
+            March 2023 - August 2023
+        </li>
+        <li>
+            <strong>Associate Consultant</strong><br>
+            Capgemini Technologies, Hyderabad, India <br>
+            April 2022 - January 2023
+        </li>
+        <li>
+            <strong>Senior Associate</strong><br>
+            Wipro Ltd, Hyderabad, India <br>
+            June 2017 - February 2022
+        </li>
+    </ul>
+</section>
+
+<section id="contact">
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:ootlav@mail.gvsu.edu">ootlav@mail.gvsu.edu</a></p>
+    <p>Phone: +1 (616) 329-3925</p>
+    <p>LinkedIn: <a href="https://linkedin.com/in/venu-ootla-bb9025110" target="_blank">linkedin.com/in/venu-ootla-bb9025110</a></p>
+</section>
+
+<footer>
+    <p>Thank you for visiting my portfolio!</p>
+    <p>&copy; 2024 Venukeswari Ootla. All rights reserved.</p>
+</footer>
+
 </body>
 </html>
